@@ -1,0 +1,79 @@
+/* Productos */
+
+.gallery {
+    &-product {
+        @include grid(3, 1fr, null, 40vh, 8px);
+        grid-auto-rows: 30vh;
+        padding: 20px;
+        gap: 30px;
+        width: 100%;
+    }
+
+    &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+        transition: all 300ms;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &-title {
+        justify-self: center;
+        font-size: map-get($fs, Large);
+        text-align: center;
+    }
+
+    .sub-menu {
+        @include flex(row, space-around, center, 0);
+        width: 100vw;
+        margin-bottom: 10px;
+
+        &__item {
+            justify-items: center;
+            font-size: map-get($fs, Medium);
+            
+
+        }
+        &__link {
+            transition: all 500ms;
+            padding: 0.3rem;
+    
+            &:hover {
+                transform: scale(1.5);
+                background-color: $principal;
+                box-shadow: 0 0 10px $principal;
+                color: $secondary;
+            }
+        }
+    }
+
+}
+.card {
+    width: auto;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: $backcolor1;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+    
+
+    &:hover {
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform: translateY(-3%);
+    }
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    .content {
+        text-align: center;
+        h3 {
+            color: $principal;
+        }
+    }
+}
