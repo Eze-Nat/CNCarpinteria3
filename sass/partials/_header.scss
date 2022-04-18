@@ -22,11 +22,11 @@ header {
             font-size: 2em;
             font-weight: bold;
 
-            .sub-menu {
+            .sub__menu {
                 display: none;
                 position: absolute;
 
-                &-link {
+                &--link {
 
                     padding: 1rem;
                     color: $principal;
@@ -43,7 +43,7 @@ header {
 
 
             &:hover {
-                .sub-menu {
+                .sub__menu {
                     display: block;
                     z-index: 1;
                 }
@@ -53,10 +53,15 @@ header {
 
         }
 
-        &-link {
+        &__link {
             padding: 1rem;
             font-size: 1em;
             transition: all .4s ease-in-out;
+            
+            &--active {
+                @extend .section__link;
+                border-bottom: 2px solid grey;
+            }
 
             &:hover {
                 background-color: $principal;
