@@ -2,12 +2,17 @@
 
 header {
     background-color: $backcolor1;
+    opacity: 0.5;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 
     .navbar {
         @include flex(row, space-between, center, 0);
         min-height: 5vh;
         padding: 0 2rem;
-        position: sticky;
+        overflow: hidden;
+
     }
 
     .logo {

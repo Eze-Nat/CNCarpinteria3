@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    display: grid;
+    
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     background-color: $principal;
@@ -34,4 +34,22 @@ a {
     text-decoration: none;
     display: inline-block;
     color: $principal;
+}
+h2 {
+    /* margin-bottom: 20px; */
+    font-size: map-get($fs , Large );
+    color: $secondary;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h4 {
+    color: $secondary;
+    text-align: center;
+    /* margin-top: 20rem; */
+    font-size: map-get($fs, Large );
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    
 }

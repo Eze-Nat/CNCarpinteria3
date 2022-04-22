@@ -1,14 +1,15 @@
 /* Inicio */
 main {
-    background-color: $backcolor2;
+  /*   background-color: $backcolor2; */
     padding-top: 2vh;
 }
 
 .uspage {
     @include flex(column, space-between, center, 0);
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+   /*  position: relative; */
+    /* overflow: hidden; */
+
+    }    /*     width: 100%;
     text-align: center;
 
 }
@@ -16,27 +17,32 @@ main {
 .bg-inicio {
     flex-basis: 80%;
 }
-
+ */
 .bg__img {
-    width: 80vh;
-    height: 80vh;
-    opacity: 0.1;
-    display: block;
+    width: 100vh;
+    height: 100vh;
+    opacity: 0.4;
+    transform: translateY(-200px);
+    
 }
 
 .homecn {
     color: $secondary;
     width: 100%;
     align-items: center;
+    justify-content: center;
+
 
     h1 {
+        display: flex;
+        text-align: center;
         font-size: map-get($fs , Title );
-        top: 0;
+        top: 29rem;
         position: absolute;
-        top: 50%;
+/*         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        color: $principal;
+        transform: translate(-50%, -150%); */
+        color: $secondary;
         animation-name: efectocn;
         animation-iteration-count: 5;
         animation-timing-function: ease-in-out;
@@ -44,6 +50,8 @@ main {
         animation-delay: 2s;
         font-family: $font4;
         font-weight: lighter;
+        /* margin: auto; */
+        margin-left: 52px;
     }
 }
 

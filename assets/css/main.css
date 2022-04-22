@@ -48,7 +48,6 @@ html {
   font-family: "Alegreya SC", serif; }
 
 body {
-  display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   background-color: white; }
@@ -61,10 +60,30 @@ a {
   display: inline-block;
   color: white; }
 
+h2 {
+  /* margin-bottom: 20px; */
+  font-size: 3em;
+  color: #3d2b13;
+  text-align: center;
+  padding-top: 2rem; }
+
+h4 {
+  color: #3d2b13;
+  text-align: center;
+  /* margin-top: 20rem; */
+  font-size: 3em;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column; }
+
 /* PARTIALS */
 /*navbar y Header*/
 header {
-  background-color: #181008; }
+  background-color: #181008;
+  opacity: 0.5;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
   header .navbar {
     display: flex;
     flex-direction: row;
@@ -73,7 +92,7 @@ header {
     gap: 0;
     min-height: 5vh;
     padding: 0 2rem;
-    position: sticky; }
+    overflow: hidden; }
   header .logo {
     flex-basis: 7%; }
   header .section {
@@ -118,16 +137,23 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 0;
-  height: 7vh;
+  height: 20vh;
   background-color: #181008; }
   footer p {
     text-align: center;
     font-size: 1.5em; }
 
+.footer__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0; }
+
 /* VIEWS */
 /* Inicio */
 main {
-  background-color: #41321e;
+  /*   background-color: $backcolor2; */
   padding-top: 2vh; }
 
 .uspage {
@@ -136,39 +162,48 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 0;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  text-align: center; }
+  /*  position: relative; */
+  /* overflow: hidden; */ }
+
+/*     width: 100%;
+    text-align: center;
+
+}
 
 .bg-inicio {
-  flex-basis: 80%; }
-
+    flex-basis: 80%;
+}
+ */
 .bg__img {
-  width: 80vh;
-  height: 80vh;
-  opacity: 0.1;
-  display: block; }
+  width: 100vh;
+  height: 100vh;
+  opacity: 0.4;
+  transform: translateY(-200px); }
 
 .homecn {
   color: #3d2b13;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .homecn h1 {
+    display: flex;
+    text-align: center;
     font-size: 15em;
-    top: 0;
+    top: 29rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    /*         top: 50%;
+        left: 50%;
+        transform: translate(-50%, -150%); */
+    color: #3d2b13;
     animation-name: efectocn;
     animation-iteration-count: 5;
     animation-timing-function: ease-in-out;
     animation-duration: 2s;
     animation-delay: 2s;
     font-family: "Allerta Stencil", sans-serif;
-    font-weight: lighter; }
+    font-weight: lighter;
+    /* margin: auto; */
+    margin-left: 52px; }
 
 @keyframes efectocn {
   0% {
@@ -197,7 +232,7 @@ main {
 /* Productos */
 .gallery__product {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(, 40vh);
   grid-gap: 8px;
   grid-auto-rows: 30vh;
@@ -208,7 +243,7 @@ main {
 .gallery__img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   border-radius: 6px;
   transition: all 300ms; }
   .gallery__img:hover {
@@ -250,7 +285,7 @@ main {
   .card:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%); }
-  .card img {
+  .card .imgprod {
     height: 100%;
     width: 100%; }
   .card .content {
@@ -260,6 +295,7 @@ main {
 
 /*Presupuesto*/
 .main-presu {
+  height: 62vh;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -288,10 +324,6 @@ main {
   color: #3d2b13;
   align-items: center;
   opacity: 0.8; }
-  .presu-form h2 {
-    margin-bottom: 20px;
-    font-size: 3em;
-    color: white; }
 
 input {
   width: 100%;
@@ -318,54 +350,65 @@ button {
     color: white; }
 
 /* Contact */
-.contact-title {
-  text-align: center;
-  padding: 20px;
-  font-size: 3em; }
+.contact {
+  /*     &-page {
+        @include grid(5, 1fr, 3, 1fr, 20px);
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 100%;
+        grid-template-areas:
+            "a b b b e"
+            "a c c c e"
+            "a d d d e"
+        ;
 
-.contact-page {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 20px;
-  align-items: center;
-  justify-content: center;
-  /*         gap: 20px;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 1fr); */
-  height: 80%;
-  width: 100%;
-  grid-template-areas: "a b b b e" "a c c c e" "a d d d e"; }
+    } */ }
+  .contact-title {
+    text-align: end;
+    padding: 20px;
+    font-size: 3em; }
+  .contact__page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0; }
+  .contact__img {
+    max-width: 5vh;
+    transition: all 300ms;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .contact__img:hover {
+      transform: scale(1.1); }
+  .contact-logo {
+    width: 2vh; }
 
-.contact__img {
-  max-width: 20vh;
-  transition: all 300ms; }
-  .contact__img:hover {
-    transform: scale(1.1); }
-
-.contact-logo {
-  width: 50vh; }
-
+/* 
 .img1 {
-  grid-area: a;
-  justify-self: center; }
+    grid-area: a;
+    justify-self: center;
+}
 
 .img2 {
-  grid-area: b;
-  justify-self: center; }
+    grid-area: b;
+    justify-self: center;
+}
 
 .img3 {
-  grid-area: c;
-  justify-self: center; }
+    grid-area: c;
+    justify-self: center;
+}
 
 .img4 {
-  grid-area: d;
-  justify-self: center; }
+    grid-area: d;
+    justify-self: center;
+}
 
 .img5 {
-  grid-area: e;
-  justify-self: center; }
-
+    grid-area: e;
+    justify-self: center;
+} */
 /* MEDIA QUERYS */
 /* Media Querys */
 @media (max-width: 900px) {

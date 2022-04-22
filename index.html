@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CAPELETTI NATALE Carpinteria. Realizamos muebles a medida, adaptandonos a las necesidades de cada cliente. Presupuestos sin cargo.">
-    <meta name="keywords" content="Muebles, Melamina, Trabajos a medida, Madera, bajomesadas, alacenas, racks tv, mesas, roperos, mesas de luz, camas, mesas ratonas">
+    <meta name="description"
+        content="CAPELETTI NATALE Carpinteria. Realizamos muebles a medida, adaptandonos a las necesidades de cada cliente. Presupuestos sin cargo.">
+    <meta name="keywords"
+        content="Muebles, Melamina, Trabajos a medida, Madera, bajomesadas, alacenas, racks tv, mesas, roperos, mesas de luz, camas, mesas ratonas">
     <title>CN Carpinteria</title>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
@@ -19,35 +21,156 @@
             </picture>
             <ul class="section">
                 <li class="section-item">
-                    <a class="section__link--active" href="./index.html">Inicio</a>
+                    <a class="section__link" href="#index">Inicio</a>
                 </li>
                 <li class="section-item">
-                    <a class="section__link" href="./assets/pages/productos.html">Productos</a>
+                    <a class="section__link" href="#productos">Productos</a>
                 </li>
                 <li class="section-item">
-                    <a class="section__link" href="./assets/pages/presupuestos.html">Presupuestos</a>
+                    <a class="section__link" href="#presupuestos">Presupuestos</a>
                 </li>
                 <li class="section-item">
-                    <a class="section__link" href="./assets/pages/contacto.html">Contacto</a>
+                    <a class="section__link" href="#contacto">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main class="uspage">
+   
+    <main class="uspage"  id="index">
+        <h4>
+        <p> Bienvenidos! Somos una empresa dedicada a la fabricación de muebles a medida.</p> 
+        <p> Con sede en Rosario. </p> 
+        <p> Tenemos mas de 6 años funcionando, podes consultar sin compromiso!</p>
+        </h4>
+        
         <picture class="bg-inicio">
-            <img class="bg__img" src="./assets/img/Completo-blanco.png" alt="Fondo CN Carpinteria">
+            <img class="bg__img" src="./assets/img/Completo-negro.png" alt="Fondo CN Carpinteria">
         </picture>
         <div class="homecn">
             <h1>CAPELETTI NATALE</h1>
         </div>
     </main>
-    <footer>
+    <h2 id="productos">Nuestros Productos!</h2>
+        <section class="gallery__product " >
+            
+            <div class="card">
+                <a href="./assets/internalpages/cocina.html" class="">
+                    <div class="content">
+                        <h3 class="">
+                            Cocina
+                        </h3>
+                    </div>
+                    <figure>
+                        <img class="" src="./assets/img/cocina3.jpg" alt="imagen de una un mueble de cocina" />
+                    </figure>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a href="./assets/internalpages/bano.html" class="">
+                    <div class="content">
+                        <h3 class="">
+                            Baño
+                        </h3>
+                    </div>
+                    <figure>
+                        <img class="" src="./assets/img/bano1.jpg" alt="imagen de un mueble de baño" />
+                    </figure>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./assets/internalpages/livingcomedor.html" class="">
+                    <div class="content">
+                        <h3 class="">
+                            Living/Comedor
+                        </h3>
+                    </div>
+                    <figure>
+                        <img class="" src="./assets/img/lc3.jpg" alt="imagen de un mueble de living o comedor" />
+                    </figure>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./assets/internalpages/patio.html" class="">
+                    <div class="content">
+                        <h3 class="">
+                            Patio
+                        </h3>
+                    </div>
+                    <figure>
+                        <img class="" src="./assets/img/patio2.jpg" alt="imagen de mueble en patio" />
+                    </figure>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./assets/internalpages/dormitorio.html" class="">
+                    <div class="content">
+                        <h3 class="">
+                            Dormitorio
+                        </h3>
+                    </div>
+                    <figure>
+                        <img class="" src="./assets/img/hab1.jpg" alt="imagen de un mueble de dormitorio" />
+                    </figure>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./assets/internalpages/varios.html" class="">
+                    <div class="content">
+                        <h3 class="">
+                            Varios
+                        </h3>
+                    </div>
+                    <figure>
+                        <img class="" src="./assets/img/varios3.jpg" alt="imagen de muebles varios" />
+                    </figure>
+                </a>
+            </div>
+        </section>
+
+        <h2 id="presupuestos">Pedi tu presupuesto sin cargo!</h2>
+        <section class="main-presu" >
+            <picture class="bg-inicio">
+                <img class="bg__img" src="./assets/img/Completo-blanco.png" alt="Fondo CN Carpinteria">
+            </picture>
+            <form class="presu-form" name="contact" method="POST" netlify>
+                <input type="text" name="Nombre" id="" placeholder="Nombre">
+                <input type="text" name="Apellido" id="" placeholder="Apellido">
+                <input type="email" name="Email" id="" placeholder="E-Mail">
+                <input type="tel" name="tel" id="" placeholder="Celular">
+                <textarea name="mensaje" id="" cols="30" rows="10"
+                    placeholder="Escriba aqui su consulta para presupuesto"></textarea>
+                <button type="submit" value="Enviar" id="presu-btn">Enviar</button>
+            </form>
+        </section>
+
+   
+    <footer id="contacto">
+    <div class="footer__title">
         <p>Realizamos todo tipo de muebles a medida. Pedi tu cotización sin cargo.</p>
         <p>Todos los derechos reservados</p>
+    </div>
+        <section class="contact">
+            <h1 class="contact-title">Seguinos en las redes!</h1>
+            <div class="contact__page">
+                <!-- <img src="./assets/img/cn-blanco.png" alt="" class="img1 contact-logo"> -->
+                <a class="img2" href="https://www.facebook.com/cncarpinteria/" target="_blank"
+                    rel="noopener noreferrer"><img class="contact__img " src="./assets/img/facelogo.png"></a>
+                <a class="img3" href="https://www.instagram.com/cncarpinteria/?hl=es" target="_blank"
+                    rel="noopener noreferrer"><img class="contact__img " src="./assets/img/instalogo.png"></a>
+                <a class="img4" href="https://wa.me/543416878831" target="_blank" rel="noopener noreferrer"><img
+                        class="contact__img " src="./assets/img/walogo.png"></a>
+               <!--  <img src="./assets/img/cn-blanco.png" alt="" class="img5 contact-logo"> -->
+            </div>
+        </section>
     </footer>
 </body>
 
 </html>
 
-<!-- a*37[href=../assets/img/hab$]>img[src=../assets/img/hab$].gallery__img --> 
+<!-- a*37[href=../assets/img/hab$]>img[src=../assets/img/hab$].gallery__img -->
 <!-- ul>li.list*4>img[href=/assets/img/coc$] -->
