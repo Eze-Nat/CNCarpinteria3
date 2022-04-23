@@ -14,6 +14,7 @@
     grid-template-rows: repeat($rows, $rsize);
     grid-gap: $gap;
 }
+
 .container {
     max-width: 1080px;
     margin: 0 auto;

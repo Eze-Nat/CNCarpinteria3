@@ -35,13 +35,14 @@
         &--item {
             justify-items: center;
             font-size: map-get($fs, Medium);
-            
+
 
         }
+
         &--link {
             transition: all 500ms;
             padding: 0.3rem;
-    
+
             &:hover {
                 transform: scale(1.5);
                 background-color: $principal;
@@ -52,26 +53,30 @@
     }
 
 }
+
 .card {
     width: auto;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
     background: $backcolor1;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     transition: all 400ms ease;
-    
+
 
     &:hover {
-        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         transform: translateY(-3%);
     }
+
     img {
         height: 100%;
         width: 100%;
     }
+
     .content {
         text-align: center;
+
         h3 {
             color: $principal;
         }

@@ -6,29 +6,39 @@ $third: black;
 $link: rgb(224, 202, 172);
 $backcolor1: rgb(24, 16, 8);
 $backcolor2: #41321e;
-$font1: 'Montserrat', sans-serif;
-$font2: 'Holtwood One SC', serif;
-$font3: 'Ultra', serif;
-$font4: 'Allerta Stencil', sans-serif;
-$font5: 'Alegreya SC', serif;
-$font6: 'Alumni Sans Inline One', cursive;
-$font7: 'Monoton', cursive;
-$font8: 'Rubik Mono One', sans-serif;
-$font9: 'Rubik Moonrocks', cursive;
-$font10: 'Rye', cursive;
-$font11: 'Raleway', sans-serif;
+$font1: 'Montserrat',
+sans-serif;
+$font2: 'Holtwood One SC',
+serif;
+$font3: 'Ultra',
+serif;
+$font4: 'Allerta Stencil',
+sans-serif;
+$font5: 'Alegreya SC',
+serif;
+$font6: 'Alumni Sans Inline One',
+cursive;
+$font7: 'Monoton',
+cursive;
+$font8: 'Rubik Mono One',
+sans-serif;
+$font9: 'Rubik Moonrocks',
+cursive;
+$font10: 'Rye',
+cursive;
+$font11: 'Raleway',
+sans-serif;
 
 
-$fs: (
-    Title: 15em,
+$fs: (Title: 15em,
     Xlarge: 5em,
     Large: 3em,
     Medium: 1.5em,
-    Small: 1em
-);
+    Small: 1em);
 
-@each $var, $val in $fs {
-    .fs #{$var}{
+@each $var,
+$val in $fs {
+    .fs #{$var} {
         font-size: #{$val}
-    }    
+    }
 }
