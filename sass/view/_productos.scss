@@ -39,6 +39,7 @@
         @include flex(row, space-around, center, 0);
         width: 100vw;
         margin-bottom: 10px;
+        padding-top: 10em;
 
         &--item {
             justify-items: center;

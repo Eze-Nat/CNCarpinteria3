@@ -23,7 +23,10 @@ body {
     
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    background-color: $principal;
+    /* background-color: $principal; */
+    background: rgb(64,49,38);
+    /* background: linear-gradient(90deg, rgba(91,44,6,1) 0%, rgba(68,33,9,0.989233193277311) 50%, rgba(91,44,6,1) 100%);  */  
+    background: linear-gradient(90deg, rgba(91,44,6,1) 0%, rgba(114, 101, 26, 0.989) 50%, rgba(91,44,6,1) 100%);
 }
 
 ul {
@@ -38,18 +41,24 @@ a {
 h2 {
     /* margin-bottom: 20px; */
     font-size: map-get($fs , Large );
-    color: $secondary;
+    color: $principal;
     text-align: center;
     padding-top: 2rem;
 }
 
 h4 {
-    color: $secondary;
+    color: $principal;
     text-align: center;
     /* margin-top: 20rem; */
-    font-size: map-get($fs, Large );
+    font-size: map-get($fs, Medium );
     margin-top: 10rem;
-    display: flex;
+/*     display: flex;
     flex-direction: column;
-    
+    justify-content: left; */
+    @include flex(row, space-between, left, 0);
+    transform: translate(-500px, 112px);
+    flex-wrap: wrap;
+    height: 50px;
+    width: 100px;
+    flex-wrap: wrap;
 }
