@@ -4,14 +4,16 @@ footer {
     @include flex(column, center, center, 0);
     height: 20vh;
     background-color: $backcolor1;
+
     p {
         text-align: center;
         font-size: 1.5em;
+        text-indent: 5px;
     }
-    
+
 }
+
 .footer__title {
     @include flex(row, center, center, 0);
 
 }
-

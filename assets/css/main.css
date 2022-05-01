@@ -141,7 +141,8 @@ footer {
   background-color: #181008; }
   footer p {
     text-align: center;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    text-indent: 5px; }
 
 .footer__title {
   display: flex;
@@ -233,6 +234,16 @@ main {
 .gallery__product {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(, 40vh);
+  grid-gap: 8px;
+  grid-auto-rows: 30vh;
+  padding: 20px;
+  gap: 30px;
+  width: 100%; }
+
+.gallery__intproduct {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(, 40vh);
   grid-gap: 8px;
   grid-auto-rows: 30vh;
